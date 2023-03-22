@@ -26,8 +26,11 @@ header
 header nav
 {
     display: flex;
-    width: 80%;
-    margin: auto;
+    width: 60%;
+    margin: 0px auto;
+    background: red;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 header nav ul
