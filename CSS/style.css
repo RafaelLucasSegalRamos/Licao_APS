@@ -16,7 +16,7 @@
 
 body
 {
-    background: #222;
+    /* background: linear-gradient(to bottom, cyan, darkblue, darkblue, lime);; */
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     height: 100vh;
@@ -113,11 +113,15 @@ header nav ul li:hover a .title
 
 body main
 {
-    background: #333;
+    
 }
 
+body main section
+{
+    height: 100vh;
+}
 
 body footer
 {
-    background: #444;
+    
 }
