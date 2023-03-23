@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 
-:root
+/* :root
 {
-    --gradiente_vermelho: linear-gradient(to bottom, #111, rgb(68, 0, 0))
-}
+    
+} */
 
 *
 {
@@ -16,49 +16,93 @@
 
 body
 {
-    /* background: linear-gradient(to bottom, cyan, darkblue, darkblue, lime);; */
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 100vh;
+    background: linear-gradient(to bottom, rgb(31, 31, 31), black);
+    /* display: grid; */
+    /* grid-template-rows: 200px 1fr 150px; Aqui é onde muda o tamanho do Header, Main e do Footer */
+    min-height: 100vh;
     width: 100vw;
 }
 
 header
 {
+    height: 200px;
+    width: 100vw;
     display: grid;
-    grid-template-rows: 1fr 100px;
+    grid-template-rows: 100px;
+    transition: 1s;
+    position: fixed;
+    z-index: 10;
+    overflow-y: hidden;
+    top: 0;
+    background: rgb(31, 31, 31);
+}
+
+header.sticky
+{
+    height: 100px;
+    transition:  height 1s;
+    transition-delay: 1s;
+
 }
 
 header .img
 {
     width: 35%;
     height: 80px;
+    position: absolute;
+    margin: auto;
+    top: 100px;
+    left: 50px;
+    transition: margin 1s, left 1s, top 1s;
+    transition-delay:  0s, 1s, 0s; 
+}
+
+header.sticky .img
+{
+  
+    top: 20px;
+    left: 20px;
+    transition:  left 1s, margin 1s,  top 1s;
+    transition-delay: 0s, 0s, 1s;
 }
 
 header .img img
 {
     width: 100%;
+    transition: 1s;
 }
 
 
 header nav
 {
     display: flex;
-    width: 60%;
+    width: 75%;
     height: 80px;
-    /* margin: 0px; */
     position: absolute;
-    /* top: 30px; */
     right: 0;
+    margin: 0 auto;
     background: linear-gradient(to bottom, #111, rgb(0, 82, 82));
     border-bottom-left-radius: 30px;
-    /* border-top-left-radius: 30px; */
+    border-bottom-right-radius: 30px;
+    transition: 1s;
+}
+
+header.sticky nav
+{
+    height: 100px;
+    width: 60%;
+    margin: 0 0 0 auto;
+    right: 0;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition: 1s;
 }
 
 header nav ul
 {
     display: flex;
     margin: auto;
+    transition: 1s;
 }
 
 header nav ul li
@@ -71,6 +115,7 @@ header nav ul li
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1s;
 }
 
 header nav ul li a 
@@ -79,6 +124,7 @@ header nav ul li a
     text-decoration: none;
     width: 100%;
     height: 100%;
+    transition: 1s;
 }
 
 header nav ul li a .title
@@ -92,6 +138,7 @@ header nav ul li a .title
     transition: 1s;
     animation: animate1 1s ease-in-out linear;
     top: -50px;
+    
 }
 
 
@@ -102,6 +149,7 @@ header nav ul li a .icon
     justify-content: center;
     align-items: center;
     height: 100%;
+    transition: 0.5s;
 }
 
 header nav ul li:hover a .title
@@ -111,17 +159,24 @@ header nav ul li:hover a .title
     transition: 1s;
 }
 
-body main
+main
 {
-    
+    min-height: 100vh; 
+    position: relative;
+    display: block;
 }
 
-body main section
+main section
 {
-    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+    display: block;
 }
 
-body footer
+footer
 {
-    
+    min-height: 150px;
+    position: relative;
+    bottom: 0;
+    color: white;
 }
