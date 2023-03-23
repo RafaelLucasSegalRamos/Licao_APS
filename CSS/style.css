@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+
+:root
+{
+    --gradiente_vermelho: linear-gradient(to bottom, #111, rgb(68, 0, 0))
+}
+
 *
 {
     margin: 0;
@@ -23,14 +29,30 @@ header
     grid-template-rows: 1fr 100px;
 }
 
+header .img
+{
+    width: 35%;
+    height: 80px;
+}
+
+header .img img
+{
+    width: 100%;
+}
+
+
 header nav
 {
     display: flex;
     width: 60%;
-    margin: 0px auto;
-    background: red;
+    height: 80px;
+    /* margin: 0px; */
+    position: absolute;
+    /* top: 30px; */
+    right: 0;
+    background: linear-gradient(to bottom, #111, rgb(0, 82, 82));
     border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    /* border-top-left-radius: 30px; */
 }
 
 header nav ul
@@ -69,6 +91,7 @@ header nav ul li a .title
     align-items: center;
     transition: 1s;
     animation: animate1 1s ease-in-out linear;
+    top: -50px;
 }
 
 
