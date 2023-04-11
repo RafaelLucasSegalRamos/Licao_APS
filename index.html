@@ -6,18 +6,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/style.css">
         <link rel="shortcut icon" href="IMGS/favicon.ico" type="image/x-icon">
-        <script src="JS/navanimation.js" defer></script>
         <title>Pagina principal</title>
     </head>
     <body>
         <header> <!--Aqui ta o Header que faz a animação-->
             <nav>
                 <ul>
-                    <li class="list active">
-                        <a href="#home">
+                    <li class="list active" id="casa">
+                        <a href="#home" >
                             <span class="icon"><i class="fa-solid fa-house"></i></span>
                             <span class="title">Home</span>
                         </a>
+                        <div class="options" onmouseleave="desceopcoes();">
+                            <ul>
+                                <li>
+                                    <a href="">link1</a>
+                                </li>
+                                <li>
+                                    <a href="">Link2</a>
+                                </li>
+                                <li>
+                                    <a href="">Link3</a>
+                                </li>
+                                <li>
+                                    <a href="">link4</a>
+                                </li>
+                            </ul>
+                        </div>  
                     </li>
                     <li class="list">
                         <a href="#sobre">
@@ -38,7 +53,8 @@
                 <img src="IMGS/Logo_final(talvez).png" alt="Logo do site">
             </div>
         </header>
-        <main>
+        
+        <main style="z-index: -5;">
             <section id="home" style="background: linear-gradient(to bottom, rgb(255, 103, 103), rgb(255, 255, 73));">
 
             </section>
@@ -55,6 +71,7 @@
         <script src="https://kit.fontawesome.com/e426d8b25c.js"
             crossorigin="anonymous"></script>
         <script src="JS/headeranimation.js"></script>
+        <script src="JS/desceopcoes.js"></script>
 
     </body>
 </html>

@@ -62,7 +62,6 @@ header .img
 
 header.sticky .img
 {
-  
     top: 20px;
     left: 20px;
     transition:  left 1s, margin 1s,  top 1s;
@@ -89,6 +88,7 @@ header nav
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     transition: 1s;
+    z-index: 10;
 }
 
 header.sticky nav
@@ -99,6 +99,7 @@ header.sticky nav
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     transition: 1s;
+    z-index: 10;
 }
 
 header nav ul
@@ -109,6 +110,7 @@ header nav ul
     position: absolute;
     right: 40px;
     top: 20px;
+    z-index: 10;
 }
 
 header nav ul li
@@ -122,6 +124,7 @@ header nav ul li
     justify-content: center;
     align-items: center;
     transition: 1s;
+    z-index: 10;
 }
 
 header nav ul li a 
@@ -171,6 +174,55 @@ header nav ul li:hover a .title
     font-weight: 400;
 }
 
+
+/* Aba que desce das opções do HOME */
+
+header nav ul li .options 
+{
+    display: block;
+    background: #333;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    opacity: 0;
+    transition: height 0.5s, width 0.5s, top 0.5s, opacity 0.5s, display 0.5s;
+    transition-delay: 1s, 1s, 0, 0;    
+    top: 0;
+    border-radius: 20px;
+}
+
+header nav ul li .options.active
+{
+    opacity: 1;
+    top: 90px;
+    width: 600px;
+    height: 400px;
+    display: block;
+}
+
+header nav ul li .options.active ul
+{
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0;
+    border-radius: 20px;
+}
+
+header nav ul li .options.active ul li
+{
+    color: white;
+    position: relative;
+    top: 10px;    
+}
+
+/* Header com as opções que desceram */
+
+header.opdown
+{
+    height: 600px; 
+}
+
 /* Começo do Estilo do MAIN */
 
 main
@@ -180,6 +232,7 @@ main
     display: block;
     scroll-snap-type: y mandatory;
     overflow: auto;
+    z-index: -5;
 }
 
 /*Estilo Geral das seções*/
