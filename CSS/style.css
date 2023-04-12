@@ -236,6 +236,8 @@ header h2
     letter-spacing: 2px;
     font-size: 1.5em;
     font-family: var(--Exo2);
+    color: rgb(0, 177, 177);
+    transition: 1s;
 }
 
 header h2 .bit
@@ -244,15 +246,21 @@ header h2 .bit
     font-weight: 400;
     font-size: 1.4em;
     letter-spacing: 4px;
+    color: white;
 }
 
 header h2 .future
 {
     color: gold;
     font-weight: 400;
-    font-size: 1.4em;
+    font-size: 1.3em;
+    font-weight: 900;
 }
 
+header.sticky h2
+{
+    top: 0px;   
+}
 /* Começo do Estilo do MAIN */
 
 main
