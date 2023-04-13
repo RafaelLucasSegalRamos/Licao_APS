@@ -273,8 +273,10 @@ main
     position: relative;
     display: block;
     scroll-snap-type: y mandatory;
-    overflow: auto;
+    /* overflow: auto; */
     z-index: -5;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 /*Estilo Geral das seções*/
@@ -285,6 +287,8 @@ main section
     display: block;
     scroll-snap-align: start;
     background-blend-mode: multiply;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 main section:nth-child(1)
@@ -305,10 +309,49 @@ main section article
     top: 200px;
 }
 
+main section article:nth-child(1)
+{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
 main section article p
 {
     position: relative;
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+    letter-spacing: 2px;
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    text-indent: 50px;
+    line-height: 20px;
 }
+
+span#creator
+{
+    font-weight: 900;
+}
+
+main section article .container
+{
+    display: flex;
+    margin: 20px;
+}
+
+main section article .container img
+{
+    position: relative;
+    right: -90px;
+    width: 430px;
+}
+
+main section article .container p
+{
+    width: 50%;
+}
+
 
 main section#sobre
 {
