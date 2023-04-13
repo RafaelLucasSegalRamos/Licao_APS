@@ -17,6 +17,10 @@
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar
+{
+    width: 0;
+}
 
 body
 {
@@ -281,6 +285,39 @@ main section
     display: block;
     scroll-snap-align: start;
     background-blend-mode: multiply;
+}
+
+main section:nth-child(1)
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main section article
+{
+    min-height: 100vh;
+    width: 95%;
+    filter: blur(1);
+    display: block;
+    position: relative;
+    top: 200px;
+}
+
+main section article p
+{
+    position: relative;
+}
+
+main section#sobre
+{
+    background: red;
+}
+
+main section#contatos
+{
+    background: blue;
 }
 
 /*Estilo do Footer*/
