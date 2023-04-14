@@ -6,6 +6,9 @@
 {
     --silk_font: 'Silkscreen', cursive;    
     --Exo2: 'Exo 2', sans-serif;
+    --duration: 5s;
+    --text-color: rgba(255, 255, 255, 0.3);
+    --bgr-color: #333;
 } 
 
 *
@@ -253,12 +256,20 @@ header h2 .bit
     color: white;
 }
 
+
+
 header h2 .future
 {
     color: gold;
     font-weight: 400;
     font-size: 1.3em;
     font-weight: 900;
+    columns: 2;
+}
+header h2 .future:nth-child(3)
+{
+    position: relative;
+    
 }
 
 header.sticky h2
@@ -309,6 +320,13 @@ main section article
     top: 200px;
 }
 
+main section article h2
+{
+    margin: 40px;
+    font-weight: 900;
+    font-family: var(--silk_font);
+}
+
 main section article:nth-child(1)
 {
     border-top-right-radius: 10px;
@@ -329,7 +347,7 @@ main section article p
     line-height: 20px;
 }
 
-span#creator
+span.impor
 {
     font-weight: 900;
 }
@@ -337,7 +355,7 @@ span#creator
 main section article .container
 {
     display: flex;
-    margin: 20px;
+    margin: 10px;
 }
 
 main section article .container img
@@ -370,4 +388,36 @@ footer
     position: relative;
     bottom: 0;
     color: white;
+}
+
+
+.shine, .chrome {
+	font-size: 3em;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+
+
+.shine {
+    background: #222 linear-gradient(left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+	background-image: linear-gradient(-40deg, transparent, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+	background-size: 200px;
+	background-clip: initial;
+    animation: shine 15s infinite linear;
+	text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+}
+@keyframes shine {
+	0% {
+		background-position: -1000px;
+	}
+	/* 20% {
+		background-position: top left;
+	}
+	90% {
+		background-position: top right;
+	} */
+	100% {
+		background-position: 1000px;
+	}
 }
