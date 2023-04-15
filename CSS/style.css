@@ -20,10 +20,10 @@
     scroll-behavior: smooth;
 }
 
-/* ::-webkit-scrollbar
+::-webkit-scrollbar
 {
     width: 0;
-} */
+}
 
 body
 {
@@ -54,8 +54,8 @@ header
 header.sticky
 {
     height: 100px;
-    transition:  height 1s;
-    transition-delay: 1s;
+    /* transition:  height 1s;
+    transition-delay: 1s; */
 }
 
 header .img
@@ -206,10 +206,12 @@ header nav ul li .options.active
     opacity: 1;
     top: 90px;
     width: 600px;
-    height: 400px;
+    height: 250px;
     display: block;
     z-index: 10;
 }
+
+
 
 header nav ul li .options.active ul
 {
@@ -218,23 +220,30 @@ header nav ul li .options.active ul
     left: 0px;
     top: 0;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 header nav ul li .options.active ul li
 {
     color: white;
     position: relative;
-    top: 10px;    
+    top: 10px;
+    width: 100%;    
 }
 
+header nav ul li .options.active ul li a
+{
+    font-family: var(--silk_font);
+}
 /* Header com as opções que desceram */
 
 header.opdown,
 header.sticky.opdown
 {
-    height: 600px; 
+    height: 400px; 
     transition: height 1s;
-    transition-delay: 0s;
+    transition-delay: 0s;   
 }
 
 /* Estilos do Subtitulo*/
