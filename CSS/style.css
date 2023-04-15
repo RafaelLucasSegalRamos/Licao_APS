@@ -196,7 +196,7 @@ header nav ul li .options
     position: absolute;
     opacity: 0;
     transition: height 0.5s, width 0.5s, top 0.5s, opacity 0.5s, display 0.5s;
-    transition-delay: 1s, 1s, 0, 0;    
+    transition-delay: 0s, 1s, 0, 0;    
     top: 0;
     border-radius: 20px;
 }
@@ -232,6 +232,8 @@ header nav ul li .options.active ul li
 header.opdown
 {
     height: 600px; 
+    transition:  height 1s;
+    transition-delay: 0s;
 }
 
 /* Estilos do Subtitulo*/
