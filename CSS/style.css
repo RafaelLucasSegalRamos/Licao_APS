@@ -211,7 +211,16 @@ header nav ul li .options.active
     z-index: 10;
 }
 
-
+header nav ul li .options ul
+{
+    height: 100%;
+    width: 0%;
+    left: 0px;
+    top: 0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
 
 header nav ul li .options.active ul
 {
