@@ -20,10 +20,10 @@
     scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar
+/* ::-webkit-scrollbar
 {
     width: 0;
-}
+} */
 
 body
 {
@@ -31,6 +31,8 @@ body
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    display: grid;
+    grid-template-rows: 1fr 200px;
 }
  
 /*Aqui é onde tem o estilo do cabeçalho e da barra de navegação, como tambem tem as suas animações*/
@@ -283,12 +285,11 @@ main
     min-height: 100vh; 
     position: relative;
     display: block;
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
     /* overflow: auto; */
     z-index: -5;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    position: relative;
     top: 200px;
 }
 
@@ -298,10 +299,12 @@ main section
     min-height: 100vh;
     position: relative;
     display: block;
-    scroll-snap-align: start;
-    background-blend-mode: multiply;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    /* scroll-snap-align: start; */
+    /* background-blend-mode: multiply; */
+    /* border-top-right-radius: 10px;
+    border-top-left-radius: 10px; */
+    border-radius: 10px;
+    margin: 10px 0;
 }
 
 main section:nth-child(1)
@@ -333,6 +336,13 @@ main section article:nth-child(1)
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
+
+main section article:nth-child(4)
+{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
 
 main section article p
 {
@@ -371,6 +381,7 @@ main section article .container img
 main section article .container p
 {
     width: 50%;
+    height: 100%;
 }
 
 
@@ -389,8 +400,10 @@ footer
 {
     min-height: 50px;
     position: relative;
-    bottom: 0;
     color: white;
+    background: #222;
+    bottom: 0;
+    margin-top: 200px;
 }
 
 
