@@ -288,6 +288,8 @@ main
     z-index: -5;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    position: relative;
+    top: 200px;
 }
 
 /*Estilo Geral das seções*/
@@ -316,8 +318,7 @@ main section article
     width: 95%;
     filter: blur(1);
     display: block;
-    position: relative;
-    top: 200px;
+    
 }
 
 main section article h2
