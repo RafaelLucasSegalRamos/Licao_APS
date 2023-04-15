@@ -356,12 +356,14 @@ main section article .container
 {
     display: flex;
     margin: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 main section article .container img
 {
     position: relative;
-    right: -90px;
+    /* right: -90px; */
     width: 430px;
 }
 
@@ -406,6 +408,7 @@ footer
 	background-clip: initial;
     animation: shine 15s infinite linear;
 	text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+    
 }
 @keyframes shine {
 	0% {
