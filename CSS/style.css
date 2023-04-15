@@ -229,10 +229,11 @@ header nav ul li .options.active ul li
 
 /* Header com as opções que desceram */
 
-header.opdown
+header.opdown,
+header.sticky.opdown
 {
     height: 600px; 
-    transition:  height 1s;
+    transition: height 1s;
     transition-delay: 0s;
 }
 
