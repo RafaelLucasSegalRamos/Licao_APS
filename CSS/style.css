@@ -368,7 +368,7 @@ main section article:nth-child(4)
 main section article p
 {
     position: relative;
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
     text-align: justify;
     letter-spacing: 2px;
