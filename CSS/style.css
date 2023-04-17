@@ -427,35 +427,3 @@ footer
     margin-top: 200px;
 }
 
-
-.shine, .chrome {
-	font-size: 3em;
-	margin: 0 auto;
-	margin-bottom: 1em;
-	font-weight: bold;
-}
-
-
-.shine {
-    background: #222 linear-gradient(left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
-	background-image: linear-gradient(-40deg, transparent, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
-	background-size: 200px;
-	background-clip: initial;
-    animation: shine 15s infinite linear;
-	text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
-    
-}
-@keyframes shine {
-	0% {
-		background-position: -1000px;
-	}
-	/* 20% {
-		background-position: top left;
-	}
-	90% {
-		background-position: top right;
-	} */
-	100% {
-		background-position: 1000px;
-	}
-}
