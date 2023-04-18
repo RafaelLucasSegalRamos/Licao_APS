@@ -40,6 +40,7 @@ body
 header
 {
     height: 200px;
+ 
     width: 100vw;
     display: grid;
     grid-template-rows: 100px;
@@ -54,8 +55,8 @@ header
 header.sticky
 {
     height: 100px;
-    /* transition:  height 1s;
-    transition-delay: 1s; */
+    transition:  height 1s;
+    transition-delay: 1s; 
 }
 
 header .img
@@ -74,8 +75,8 @@ header.sticky .img
 {
     top: 20px;
     left: 20px;
-    transition:  left 1s, margin 1s,  top 1s;
-    transition-delay: 0s, 0s, 1s;
+    /* transition:  left 1s, margin 1s,  top 1s;
+    transition-delay: 0s, 0s, 1s; */
 }
 
 header .img img
@@ -193,7 +194,7 @@ header nav ul li .options
     background: #333;
     width: 40px;
     height: 40px;
-    position: absolute;
+    position: fixed;
     opacity: 0;
     transition: height 0.5s, width 0.5s, top 0.5s, opacity 0.5s, display 0.5s;
     transition-delay: 0s, 1s, 0, 0;    
@@ -247,13 +248,13 @@ header nav ul li .options.active ul li a
 }
 /* Header com as opções que desceram */
 
-header.opdown,
+/* header.opdown,
 header.sticky.opdown
 {
     height: 400px; 
     transition: height 1s;
     transition-delay: 0s;   
-}
+} */
 
 /* Estilos do Subtitulo*/
 
