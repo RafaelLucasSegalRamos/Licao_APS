@@ -207,7 +207,7 @@ header nav ul li .options.active
     opacity: 1;
     top: 90px;
     width: 600px;
-    height: 250px;
+    height: 200px;
     display: block;
     z-index: 10;
 }
@@ -327,6 +327,7 @@ main section
     border-top-left-radius: 10px; */
     border-radius: 10px;
     margin: 10px 0;
+    background: #7da3e8;
 }
 
 main section:nth-child(1)
@@ -373,8 +374,8 @@ main section article p
     padding: 10px;
     text-align: justify;
     letter-spacing: 2px;
-    border: 2px solid white;
-    background: rgba(255, 255, 255, 0.3);
+    /* border: 2px solid white; */
+    background: rgba(255, 255, 255, 0.199);
     border-radius: 20px;
     text-indent: 50px;
     line-height: 20px;
@@ -409,7 +410,9 @@ main section article .container p
 
 main section#sobre
 {
-    background: red;
+    background: #444;
+    margin: 30px;
+    
 }
 
 main section#contatos
