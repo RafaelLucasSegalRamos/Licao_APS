@@ -33,6 +33,7 @@ body
     overflow-x: hidden;
     display: grid;
     grid-template-rows: 1fr 200px;
+    font-family: Arial, Helvetica, sans-serif;
 }
  
 /*Aqui é onde tem o estilo do cabeçalho e da barra de navegação, como tambem tem as suas animações*/
