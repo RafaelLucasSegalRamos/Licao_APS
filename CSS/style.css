@@ -95,7 +95,8 @@ header nav
     position: absolute;
     right: 0;
     margin: 0 auto;
-    background: linear-gradient(to bottom, #111, rgb(0, 82, 82));
+    /* background: linear-gradient(to bottom, #111, rgb(0, 82, 82)); */
+    background: #333;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     transition: 1s;
@@ -111,6 +112,8 @@ header.sticky nav
     border-bottom-right-radius: 0px;
     transition: 1s;
     z-index: 10;
+    background: rgb(31, 31, 31);
+
 }
 
 header nav ul
@@ -313,6 +316,7 @@ main
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     top: 200px;
+    background: linear-gradient(to bottom, white, #7da3e8, #7da3e8);
 }
 
 /*Estilo Geral das seções*/
@@ -327,7 +331,7 @@ main section
     border-top-left-radius: 10px; */
     border-radius: 10px;
     margin: 10px 0;
-    background: #7da3e8;
+    /* background: #7da3e8; */
 }
 
 main section:nth-child(1)
