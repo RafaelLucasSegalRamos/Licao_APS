@@ -272,7 +272,9 @@ header nav ul li .options
 header nav ul li .options a
 {
     padding: 0;
+    -webkit-box-reflect: below 30px linear-gradient(transparent, #0000);
 }
+
 header nav ul li .options a::before
 {
     content: '';
@@ -411,7 +413,6 @@ main
     display: block;
     /* scroll-snap-type: y mandatory; */
     /* overflow: auto; */
-    z-index: -5;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     top: 200px;
@@ -431,6 +432,117 @@ main section
     border-radius: 10px;
     margin: 10px 0;
     /* background: #7da3e8; */
+}
+main #home
+{
+    z-index: 1000;
+}
+
+main #home .box
+{
+    position: relative;
+    height: 400px;
+    transform-style: preserve-3d;
+    animation: roda 16s linear infinite;
+    top: 0px;
+    cursor: pointer;
+}
+
+@keyframes roda
+{
+    0%
+    {
+        transform: rotateX(-20deg) rotateY(360deg);
+    }
+    100%
+    {
+        transform: rotateX(-20deg) rotateY(0deg);
+    }
+}
+
+main #home .box div
+{
+    position: absolute;
+    inset: 0;
+    transform-style: preserve-3d;
+}
+
+main #home .box div.block span
+{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background: #444;
+    left: calc(50% - 200px);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(200px);
+    transition: 0.5s;
+}
+
+main #home .box:hover div.block span
+{
+    background: rgb(0, 187, 187);
+    /* box-shadow: 0 0 20px rgb(101, 25, 172),
+                0 0 40px rgba(101, 25, 172, 0.75),
+                0 0 60px rgb(101, 25, 172, 0.5),
+                0 0 100px rgb(101, 25, 172, 0.25); */
+    filter: drop-shadow(0 0 50px rgb(0, 187, 187));
+}
+
+
+main #home .box div.text a
+{
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    display: flex;
+    left: -200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* left: calc(50% - 100px); */
+    transform: rotateY(calc(90deg * var(--i))) translateZ(300px);
+    transition: 0.5s;
+    color: white;
+    text-decoration: none;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    line-height: 1em;
+    /* -webkit-text-stroke: 3px black; */
+    transform-style: preserve-3d;
+    text-shadow: 0 0 20px white;
+}
+
+
+main #home .box div.text a::before
+{
+    content: attr(data-text);
+    position: absolute;
+    bottom: 7px;
+    transform-origin: bottom;
+    transform: rotateX(-90deg);
+    color: rgba(0, 0, 0, 0.1);
+    -webkit-text-stroke: 0px black;
+    filter: blur(5px);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0);
+
+}
+
+main #home .box div.text a::after
+{
+    content: '';
+    position: absolute;
+    width: 720px;
+    height: 120px;
+    top: 200px;
+    transform: rotateX(-90deg);
+    background: #444;
+    transition: 0.5s;
+}
+
+main #home .box:hover div.text a::after
+{
+    background: rgb(0, 187, 187);
+    filter: drop-shadow(0 0 50px rgb(0, 187, 187));
 }
 
 main section:nth-child(1)
@@ -516,11 +628,6 @@ main section#sobre
     background: #444;
     margin: 30px;
     
-}
-
-main section#contatos
-{
-    background: blue;
 }
 
 /*Estilo do Footer*/
