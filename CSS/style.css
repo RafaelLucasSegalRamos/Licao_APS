@@ -151,6 +151,69 @@ header nav ul li a
     transition: 1s;
 }
 
+header nav ul li a
+{
+    position: relative;
+    padding: 30px 30px;
+    margin: 0 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    transition: 0.5s;
+    -webkit-box-reflect: below 30px linear-gradient(transparent, #0002);
+}
+
+header nav ul li a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #21ebff;
+    border-left: 2px solid #21ebff;
+    transition: width 0.5s, height 0.5s, box-shadow 0.5s;
+}
+
+header nav ul li a::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #21ebff;
+    border-right: 2px solid #21ebff;
+    transition: width 0.5s, height 0.5s, box-shadow 0.5s;
+
+}
+
+/* header nav ul li a:hover
+{
+    background: #21ebff;
+    color: black;
+    box-shadow: 0 0 10px #21ebff,
+                0 0 20px #21ebff,
+                0 0 40px #21ebff,
+                0 0 50px #21ebff;
+    transition-delay: 1s;
+} */
+
+header nav ul li a:hover::before
+{
+    width: 94%;
+    height: 97%;
+}
+
+header nav ul li a:hover::after
+{
+    width: 94%;
+    height: 97%;
+}
+
 header nav ul li a .title
 {
     visibility: hidden;
@@ -204,6 +267,49 @@ header nav ul li .options
     transition-delay: 0s, 1s, 0, 0;    
     top: 0;
     border-radius: 20px;
+}
+
+header nav ul li .options a
+{
+    padding: 0;
+}
+header nav ul li .options a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 0;
+    border-left:0;
+    transition: width 0.5s, height 0.5s, box-shadow 0.5s;
+}
+
+header nav ul li .options a::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #21ebff;
+    border-right: 0;
+    transition: width 0.5s, height 0.5s, box-shadow 0.5s;
+
+}
+
+header nav ul li .options a:hover::before
+{
+    width: 94%;
+    height: 97%;
+}
+
+header nav ul li .options a:hover::after
+{
+    width: 94%;
+    height: 97%;
 }
 
 header nav ul li .options.active
@@ -420,7 +526,7 @@ main section#contatos
 /*Estilo do Footer*/
 footer
 {
-    min-height: 110vh;
+    min-height: 120vh;
     position: relative;
     color: white;
     background: #222;
@@ -470,11 +576,7 @@ form input[type="submit"]
 {
     border: none;
     outline: none;
-    width: 150px;
-    position: absolute;
-    right: 200px;
-    top: 200px;
-    height: 100px;
+    position: relative;
     font-family: var(--silk_font);
     text-shadow: 0 0 5px rgba(0, 255, 255, 0.493);
     font-size: 1.5em;
@@ -482,35 +584,12 @@ form input[type="submit"]
     background: rgb(32, 32, 32);
     color: cyan;
     transition: 1s;
-    display: block;
-}
-footer form input[type="submit"]::before
-{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid #21ebff;
-    border-left: 2px solid #21ebff;
-    transition: width 0.5s, height 0.5s, box-shadow 0.5s;
-    background: red;
-    z-index: 1000;
-}
-
-form input[type="submit"]::after
-{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 10px;
-    height: 10px;
-    border-bottom: 2px solid #21ebff;
-    border-right: 2px solid #21ebff;
-    transition: width 0.5s, height 0.5s, box-shadow 0.5s;
-
+    z-index: 1;
+    cursor: pointer;
+    padding: 30px;
+    margin: 0 60px;
+    display: inline-block;
+    /* -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);*/
 }
 
 form input[type="submit"]:hover
@@ -521,19 +600,7 @@ form input[type="submit"]:hover
                 0 0 20px #21ebff,
                 0 0 40px #21ebff,
                 0 0 50px #21ebff;
-    transition-delay: 1s;
-}
-
-form input[type="submit"]:hover::before
-{
-    width: 98%;
-    height: 97%;
-}
-
-form input[type="submit"]:hover::after
-{
-    width: 98%;
-    height: 97%;
+    
 }
 
 footer form textarea
