@@ -420,16 +420,14 @@ main section#contatos
 /*Estilo do Footer*/
 footer
 {
-    min-height: 100vh;
+    min-height: 110vh;
     position: relative;
     color: white;
     background: #222;
     bottom: 0;
     margin-top: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 100px 1fr;    
 
 }
 
@@ -449,7 +447,6 @@ footer form textarea
 {
     resize: none;
     display: block;
-    margin: 10px;
 }
 
 footer form input[type="text"],
@@ -465,8 +462,78 @@ footer form textarea
     background: rgb(32, 32, 32);
     color: cyan;
     font-family: var(--silk_font);
-    border-bottom: 3px solid cyan;
+    /* border-bottom: 3px solid cyan; */
     text-shadow: 0 0 5px rgba(0, 255, 255, 0.493);
+}
+
+form input[type="submit"]
+{
+    border: none;
+    outline: none;
+    width: 150px;
+    position: absolute;
+    right: 200px;
+    top: 200px;
+    height: 100px;
+    font-family: var(--silk_font);
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.493);
+    font-size: 1.5em;
+    text-align: center;
+    background: rgb(32, 32, 32);
+    color: cyan;
+    transition: 1s;
+    display: block;
+}
+footer form input[type="submit"]::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #21ebff;
+    border-left: 2px solid #21ebff;
+    transition: width 0.5s, height 0.5s, box-shadow 0.5s;
+    background: red;
+    z-index: 1000;
+}
+
+form input[type="submit"]::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #21ebff;
+    border-right: 2px solid #21ebff;
+    transition: width 0.5s, height 0.5s, box-shadow 0.5s;
+
+}
+
+form input[type="submit"]:hover
+{
+    background: #21ebff;
+    color: black;
+    box-shadow: 0 0 10px #21ebff,
+                0 0 20px #21ebff,
+                0 0 40px #21ebff,
+                0 0 50px #21ebff;
+    transition-delay: 1s;
+}
+
+form input[type="submit"]:hover::before
+{
+    width: 98%;
+    height: 97%;
+}
+
+form input[type="submit"]:hover::after
+{
+    width: 98%;
+    height: 97%;
 }
 
 footer form textarea
@@ -485,4 +552,5 @@ footer p
     font-size: 1.5em;
     font-family: var(--poppins);
     margin: 30px;
+    text-align: center;
 }
