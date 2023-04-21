@@ -6,9 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/style.css">
         <link rel="shortcut icon" href="IMGS/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="CSS/style.css">
         <title>Pagina principal</title>
     </head>
     <body>
+        <!-- Com modo escuro? Perguntar. -->
         <header> <!--Aqui ta o Header que faz a animação-->
             <nav>
                 <ul>
@@ -156,6 +158,12 @@
         </main>
         <footer id="contatos">
             <p>&copy; Site feito pelo grupo 2 - Unip</p>
+            <form action="PHP/mandaremail.php//Py/mandaremail.py">
+                <input type="text" placeholder="Digite seu nome..." required>
+                <input type="email" placeholder="Digite seu email..." required>
+                <textarea name="texto" required></textarea>
+                <input type="submit" value="Clique para enviar seu email.">
+            </form>
         </footer>
         <script src="https://kit.fontawesome.com/e426d8b25c.js"
             crossorigin="anonymous"></script>

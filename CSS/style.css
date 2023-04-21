@@ -9,6 +9,7 @@
     --duration: 5s;
     --text-color: rgba(255, 255, 255, 0.3);
     --bgr-color: #333;
+    --poppins: 'Poppins', cursive;
 } 
 
 *
@@ -76,8 +77,8 @@ header.sticky .img
 {
     top: 20px;
     left: 20px;
-    /* transition:  left 1s, margin 1s,  top 1s;
-    transition-delay: 0s, 0s, 1s; */
+    transition:  left 1s, margin 1s,  top 1s;
+    transition-delay: 0s, 0s, 1s;
 }
 
 header .img img
@@ -113,8 +114,7 @@ header.sticky nav
     border-bottom-right-radius: 0px;
     transition: 1s;
     z-index: 10;
-    background: rgb(31, 31, 31);
-
+    background: rgba(31, 31, 31, 0);
 }
 
 header nav ul
@@ -250,15 +250,7 @@ header nav ul li .options.active ul li a
 {
     font-family: var(--silk_font);
 }
-/* Header com as opções que desceram */
 
-/* header.opdown,
-header.sticky.opdown
-{
-    height: 400px; 
-    transition: height 1s;
-    transition-delay: 0s;   
-} */
 
 /* Estilos do Subtitulo*/
 
@@ -302,7 +294,7 @@ header h2 .future:nth-child(3)
 
 header.sticky h2
 {
-    top: 0px;   
+    top: 20px;   
 }
 /* Começo do Estilo do MAIN */
 
@@ -428,11 +420,68 @@ main section#contatos
 /*Estilo do Footer*/
 footer
 {
-    min-height: 50px;
+    min-height: 100vh;
     position: relative;
     color: white;
     background: #222;
     bottom: 0;
     margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
+footer form
+{
+    min-height: 80%;
+    width: 90%;
+    background: rgb(22, 22, 22);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 50px;
+    display: block;
+}
+
+footer form input,
+footer form textarea
+{
+    resize: none;
+    display: block;
+    margin: 10px;
+}
+
+footer form input[type="text"],
+footer form input[type="email"],
+footer form textarea
+{
+    margin: 30px 60px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    width: 700px;
+    font-size: 1.5em;
+    background: rgb(32, 32, 32);
+    color: cyan;
+    font-family: var(--silk_font);
+    border-bottom: 3px solid cyan;
+}
+
+footer form textarea
+{
+    height: 300px;
+}
+
+footer form input::placeholder
+{
+    color: rgba(0, 255, 255, 0.5);
+    font-family: var(--silk_font);
+}
+
+footer p
+{
+    font-size: 1.5em;
+    font-family: var(--poppins);
+    margin: 30px;
+}
