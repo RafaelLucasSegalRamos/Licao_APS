@@ -433,18 +433,70 @@ main section
     margin: 10px 0;
     /* background: #7da3e8; */
 }
-main #home
+
+
+main #home .sect
 {
-    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    z-index: 20;
+    transition: 1s;
 }
 
+main #home .sect.hidden
+{
+    top: -100vh;
+
+}
+main #home .sect .sec
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+main #home .sect .sec.sec1
+{
+    background: linear-gradient(135deg, #7da3e8, rgb(0, 187, 187));
+    filter: hue-rotate(180deg);
+    clip-path: circle(300px at 0 0);
+}
+main #home .sect .sec.sec2
+{
+    background: linear-gradient(-135deg, #7da3e8, rgb(0, 187, 187));
+    clip-path: circle(200px at 100% 100%);
+}
+main #home .sect h2
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    color: #fff;
+    font-size: 10em;
+    text-align: center;
+}
+main #home .sect .sec.sec1 h2
+{
+    color: transparent;
+    -webkit-text-stroke: 2.5px #333;
+}
+main #home .sect .sec.sec2 h2
+{
+    color: #333;
+    -webkit-text-stroke: 2.5px #fff;
+}
 main #home .box
 {
     position: relative;
     height: 400px;
     transform-style: preserve-3d;
     animation: roda 16s linear infinite;
-    top: 0px;
+    margin-top: 700px;
     cursor: pointer;
 }
 
