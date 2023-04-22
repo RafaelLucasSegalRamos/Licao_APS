@@ -552,7 +552,7 @@ main #home .box div.text a
     align-items: center;
     text-align: center;
     /* left: calc(50% - 100px); */
-    transform: rotateY(calc(90deg * var(--i))) translateZ(300px);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(250px);
     transition: 0.5s;
     color: white;
     text-decoration: none;
@@ -583,7 +583,7 @@ main #home .box div.text a::after
 {
     content: '';
     position: absolute;
-    width: 720px;
+    width: 610px;
     height: 120px;
     top: 200px;
     transform: rotateX(-90deg);
