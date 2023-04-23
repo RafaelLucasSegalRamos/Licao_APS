@@ -496,7 +496,7 @@ main #home .box
     height: 400px;
     transform-style: preserve-3d;
     animation: roda 16s linear infinite;
-    margin-top: 700px;
+    margin-top: 145vh;
     cursor: pointer;
 }
 
