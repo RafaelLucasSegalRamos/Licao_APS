@@ -435,6 +435,11 @@ main section
     /* background: #7da3e8; */
 }
 
+main section span.space
+{
+    display: block;
+    height: 100px;
+}
 
 main #home .sect
 {
