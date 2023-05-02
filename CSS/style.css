@@ -687,6 +687,8 @@ main section article .container p
 /*carrossel-console*/
 .mySlides {
     display: none;
+    border-radius: 10px;
+    overflow: hidden;
   }
   img {
     vertical-align: middle;
