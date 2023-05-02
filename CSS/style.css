@@ -318,6 +318,7 @@ header nav ul li .options.active
 {
     opacity: 1;
     top: 90px;
+    right: 100px;
     width: 600px;
     height: 200px;
     display: block;
@@ -661,6 +662,11 @@ main section article .container
     justify-content: center;
 }
 
+main section article .container.images img
+{
+    margin: 0 100px;
+}
+
 main section article .container img
 {
     position: relative;
@@ -675,7 +681,7 @@ main section article .container p
 }
 
 
-main section#sobre
+main section#evolucao_grafica
 {
     background: #444;
     margin: 30px;
