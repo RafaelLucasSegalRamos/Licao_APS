@@ -750,7 +750,7 @@ main section article .container p
   }
   
   
-  .active, .dot:hover {
+  .ativo, .dot:hover {
     background-color: #717171;
   }
   
