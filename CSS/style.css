@@ -771,13 +771,332 @@ main section article .container p
   
 
 /*termina*/
-main section article#evolucao_grafica
-{
-    background: #444;
-    margin: 30px;
-    
+
+/* timeline evolução */
+
+@media (min-width: 1000px) {
+    #timeline .demo-card:nth-child(odd) .head::after, #timeline .demo-card:nth-child(even) .head::after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+   }
+    #timeline .demo-card:nth-child(odd) .head::before, #timeline .demo-card:nth-child(even) .head::before {
+        position: absolute;
+        content: "";
+        width: 9px;
+        height: 9px;
+        background-color: lightskyblue;
+        border-radius: 9px;
+        box-shadow: 0px 0px 2px 5px #4b94be;
+   }
+}
+/* Some Cool Stuff */
+.demo-card:nth-child(1) {
+    order: 1;
+}
+.demo-card:nth-child(2) {
+    order: 5;
+}
+.demo-card:nth-child(3) {
+    order: 2;
+}
+.demo-card:nth-child(4) {
+    order: 6;
+}
+.demo-card:nth-child(5) {
+    order: 3;
+}
+.demo-card:nth-child(6) {
+    order: 7;
+}
+.demo-card:nth-child(7) {
+    order: 4;
 }
 
+
+
+#timeline {
+    padding: 80px 0;
+}
+#timeline h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+h3.leader {
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 45px;
+    font-size: 25px;
+    font-family: var(--Exo2);
+}
+#timeline .demo-card-wrapper {
+    position: relative;
+    margin: auto;
+}
+@media (min-width: 1000px) {
+    #timeline .demo-card-wrapper {
+        display: flex;
+        flex-flow: column wrap;
+        width: 1170px;
+        height: 1800px;
+        margin: 0 auto;
+   }
+}
+#timeline .demo-card-wrapper::after {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 1px solid rgba(191, 191, 191, 0.4);
+}
+@media (min-width: 1000px) {
+    #timeline .demo-card-wrapper::after {
+        border-left: 2px solid #bdbdbd;
+   }
+}
+#timeline .demo-card {
+    position: relative;
+    display: block;
+    margin: 10px auto 80px;
+    max-width: 94%;
+    z-index: 2;
+}
+@media (min-width: 480px) {
+    #timeline .demo-card {
+        max-width: 60%;
+        box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+   }
+}
+@media (min-width: 720px) {
+    #timeline .demo-card {
+        max-width: 40%;
+   }
+}
+@media (min-width: 1000px) {
+    #timeline .demo-card {
+        max-width: 450px;
+        height: 350px;
+        margin: 90px;
+        margin-top: 50px;
+        margin-bottom: 45px;
+   }
+    #timeline .demo-card:nth-child(odd) {
+        margin-right: 45px;
+   }
+    #timeline .demo-card:nth-child(odd) .head::after {
+        border-left-width: 15px;
+        border-left-style: solid;
+        left: 100%;
+   }
+    #timeline .demo-card:nth-child(odd) .head::before {
+        left: 491.5px;
+   }
+    #timeline .demo-card:nth-child(even) {
+        margin-left: 45px;
+   }
+    #timeline .demo-card:nth-child(even) .head::after {
+        border-right-width: 15px;
+        border-right-style: solid;
+        right: 100%;
+   }
+    #timeline .demo-card:nth-child(even) .head::before {
+        right: 489.5px;
+   }
+    #timeline .demo-card:nth-child(2) {
+        margin-top: 180px;
+   }
+}
+#timeline .demo-card .head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+}
+#timeline .demo-card .head .number-box {
+    display: inline;
+    float: left;
+    margin: 15px;
+    padding: 10px;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.17);
+}
+#timeline .demo-card .head h2 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: inherit;
+    letter-spacing: 2px;
+    margin: 0;
+    padding-bottom: 6px;
+    line-height: 1rem;
+}
+@media (min-width: 480px) {
+    #timeline .demo-card .head h2 {
+        font-size: 130%;
+        line-height: 1.2rem;
+   }
+}
+#timeline .demo-card .head h2 span {
+    display: block;
+    font-size: 0.6rem;
+    margin: 0;
+}
+@media (min-width: 480px) {
+    #timeline .demo-card .head h2 span {
+        font-size: 0.8rem;
+   }
+}
+#timeline .demo-card .body {
+    background: #fff;
+    border: 1px solid rgba(191, 191, 191, 0.4);
+    border-top: 0;
+    padding: 10px;
+}
+@media (min-width: 1000px) {
+    #timeline .demo-card .body {
+        height: 300px;
+        background-color: white;
+   }
+}
+#timeline .demo-card .body p {
+    font-size: 18px;
+    line-height: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+#timeline .demo-card .body img {
+    display: block;
+    width: 100%;
+}
+#timeline .demo-card--step1 {
+    background-color: #5db42b;
+}
+#timeline .demo-card--step1 .head::after {
+    border-color: #5db42b;
+}
+#timeline .demo-card--step2 {
+    background-color: #2fa797;
+}
+#timeline .demo-card--step2 .head::after {
+    border-color: #2cac9b;
+}
+#timeline .demo-card--step3 {
+    background-color: #ce43eb;
+}
+#timeline .demo-card--step3 .head::after {
+    border-color: #ce43eb;
+}
+#timeline .demo-card--step4 {
+    background-color: #4d92eb;
+}
+#timeline .demo-card--step4 .head::after {
+    border-color: #4d92eb;
+}
+#timeline .demo-card--step5 {
+    background-color: #46b8e9;
+}
+#timeline .demo-card--step5 .head::after {
+    border-color: #46b8e9;
+}
+#timeline .demo-card--step6 {
+    background-color: #46b8e9;
+}
+#timeline .demo-card--step6 .head::after {
+    border-color: #46b8e9;
+}
+#timeline .demo-card--step7 {
+    background-color: #a59d32;
+}
+#timeline .demo-card--step7 .head::after {
+    border-color: #948d26;
+}
+/* termina a timeline */
+
+/* começa o antes e depois */
+
+
+  div#comparison { 
+    width: 700px;
+    height: 466px;
+    /* max-width: 1000px;
+    max-height: 570px; */
+    max-width: 1000px;
+    max-height: 500px;
+    overflow: hidden;
+   }
+  div#comparison figure { 
+    background-image: url(../IMGS/img-BA/Resident_evil.jpeg); 
+    background-size: cover;
+    position: relative;
+    font-size: 0;
+    width: 100%; 
+    height: 100%;
+    margin: 0; 
+  }
+  div#comparison figure > img { 
+    position: relative;
+    width: 100%;
+  }
+  div#comparison figure div { 
+    background-image: url(../IMGS/img-BA/Resident_remake.jpeg);
+    background-size: cover;
+    position: absolute;
+    width: 50%; 
+    box-shadow: 0 5px 20px 2px rgba(0,0,0,0.3);
+    overflow: hidden;
+    bottom: 0;
+    height: 100%;
+  }
+  
+  input[type=range]{
+    /* -webkit-appearance:none;
+    -moz-appearance:none; */
+    appearance: none;
+    position: relative;
+    top: -55%; left: -1%;
+    background-color: rgba(255,255,255,0);
+    width: 102%; 
+  }
+  input[type=range]:focus { 
+    outline: none; 
+  }
+  input[type=range]:active { 
+    outline: none;  
+  }
+  /* firefox */
+  input[type=range]::-moz-range-track { 
+    -moz-appearance:none;
+      height:15px;
+      width: 98%;
+      background-color: rgba(255,255,255,0.1); 
+      position: relative;
+      outline: none;    
+   }
+  input[type=range]::active { 
+    border: none; 
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance:none;
+      width: 50px; height: 50px;   
+      background: url(../IMGS/img-BA/seta-s.png), rgba(255, 255, 255, 0.61);
+      border-radius: 50%;
+      z-index: 10;
+      background-size: cover;
+      filter: blur(1);
+     }
+
+/* termina */
 /*Estilo do Footer*/
 footer
 {
