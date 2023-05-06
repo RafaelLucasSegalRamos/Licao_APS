@@ -1097,9 +1097,18 @@ h3.leader {
      }
 
 /* termina */
-/* carrossel e-sports */
+article#e-sports .ibox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* termina o casrrossel */
+article#e-sports iframe
+{
+    width: 85%;
+    height: 500px;
+}
 
 /*Estilo do Footer*/
 footer
