@@ -1023,6 +1023,14 @@ h3.leader {
 }
 /* termina a timeline */
 
+article p.tenis{
+    width: 180px;
+    position: absolute;
+    right: 275px;
+    text-align: center;
+    text-indent: 0;
+}
+
 /* começa o antes e depois */
 
 
