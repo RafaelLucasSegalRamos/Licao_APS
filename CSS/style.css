@@ -320,7 +320,7 @@ header nav ul li .options.active
     top: 90px;
     right: 100px;
     width: 600px;
-    height: 200px;
+    height: 250px;
     display: block;
     z-index: 10;
 }
@@ -439,6 +439,7 @@ main section span.space
 {
     display: block;
     height: 100px;
+    position: absolute;
 }
 
 main #home .sect
@@ -1109,6 +1110,103 @@ article#e-sports iframe
     width: 85%;
     height: 500px;
 }
+
+/*Estilização do Jogo*/
+main article#e-sports .joj
+{
+    padding: 50px;
+}
+
+main article#e-sports .containerr
+{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+main article#e-sports .box{
+    position: relative;
+    width: 600px;
+    height: 200px;
+    border: 2px solid #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main article#e-sports .box label
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #555;
+    border-bottom: none;
+}
+main article#e-sports .box label input
+{
+    position: relative;
+    appearance: none;
+    z-index: 10;
+}
+main article#e-sports .box label i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 600px;
+}
+main article#e-sports .box label:nth-child(1) i
+{
+    background-image: url(../IMGS/01.jpg);
+    animation: animate-joj 0.5s steps(3)  infinite;
+}
+main article#e-sports .box label:nth-child(2) i
+{
+    background-image: url(../IMGS/02.jpg);
+    animation: animate-joj 0.4s steps(3) infinite;
+
+}
+main article#e-sports .box label:nth-child(3) i
+{
+    background-image: url(../IMGS/03.jpg);
+    animation: animate-joj 0.7s steps(3) infinite;
+
+}
+@keyframes animate-joj
+{
+    0%
+    {
+        background-position: 0px;
+    }
+    100%
+    {
+        background-position: 600px;
+    }
+}
+main article#e-sports .box label input:checked ~ i
+{
+    animation-play-state: paused;
+}
+main article#e-sports .reset {
+    margin-top: 40px;
+    border: none;
+    font-size: 1.25em;
+    padding: 10px 25px;
+    background: #333;
+    color: #fff;
+}
+.main article#e-sports reset:active{
+    background: #d63c3c;
+    transform: scale(0.95);
+}
+
+main article#e-sports #show-or-hide{
+    text-align: center;
+}
+
 
 /*Estilo do Footer*/
 footer

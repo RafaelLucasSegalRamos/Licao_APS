@@ -14,7 +14,7 @@
             <nav>
                 <ul>
                     <li class="list active" id="casa">
-                        <a href="#cont" >
+                        <a href="#start" >
                             <span class="icon"><i class="fa-solid fa-house"></i></span>
                             <span class="title">Home</span>
                         </a>
@@ -27,6 +27,9 @@
                                     <a href="#evolucao">Evolução dos consoles</a>
                                 </li>
                                 <li>
+                                    <a href="#evolucao_grafica">Evolução Gráfica dos Jogos</a>
+                                </li>
+                                <li>
                                     <a href="#e-sports">E-Sports</a>
                                 </li>
                             </ul>
@@ -35,14 +38,14 @@
                     
                     <li>
                         <a href="#contatos" class="list">
-                            <span class="icon"><i class="fa-solid fa-user"></i></span>
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
                             <span class="title">Contatos</span>
                         </a>
                     </li>
                 </ul>
             </nav>
             <h2 class="sub"><span class="bit">8-bit</span> AO <span class="future">4K</span></h2>
-            <a href="#">
+            <a href="#start">
                 <div class="img">
                     <img src="IMGS/Logo_final.png" alt="Logo do site">
                 </div>
@@ -62,7 +65,9 @@
                         <h2>Evolução Consoles</h2>
                     </a>
                 </div>
-                <div class="box" id="start">
+                <span class="space" id="start"></span>
+                <div class="box">
+                    
                     <div class="block">
                         <span style="--i: 0;"></span>
                         <span style="--i: 1;"></span>
@@ -72,9 +77,10 @@
                     <div class="text">
                         <a href="#inventor_surgimento" style="--i:0;" data-text="P.V.G.">Primeiro Video Game</a>
                         <a href="#evolucao" style="--i:1;" data-text="Evolução dos consoles">Evolução dos consoles</a>
-                        <a href="#e-sports" style="--i:2;" data-text="E-sports">E-sports</a>
-                        <a href="#evolucao_grafica" style="--i:3;" data-text="Evolucão gráfica">Evolução gráfica</a>
-                    </div>
+                        <a href="#evolucao_grafica" style="--i:2;" data-text="Evolucão gráfica">Evolução gráfica</a>
+                    
+                        <a href="#e-sports" style="--i:3;" data-text="E-sports">E-sports</a>
+                       </div> 
                 </div>
             </section>
             <section id="cont">
@@ -331,6 +337,31 @@
                     <h2>E-Sports</h2>
                     <!-- Feito pelo Eduardo -->
                     <div class="ibox"><iframe src="Timeline.html" frameborder="0"></iframe></div>
+                    <div class="joj">
+                        <button id="show-or-hide">Jogar</button>
+                        <h2>Console Matching Game</h2>
+                        <div class="containerr">
+                        
+                        
+                            <div class="box">
+                                <label>
+                                    <input type="checkbox" class="checkbox" id="chk1">
+                                    <i></i>
+                                </label>
+                                <label>
+                                    <input type="checkbox" class="checkbox" id="chk2">
+                                    <i></i>
+                                </label>
+                                <label>
+                                    <input type="checkbox" class="checkbox" id="chk3">
+                                    <i></i>
+                                </label>
+                            </div>
+                        
+                        <button class="reset">Reset Game</button>
+                        </div>
+                    </div>
+    
                 </article>
                
             </section>
@@ -353,5 +384,6 @@
         <script src="JS/desceopcoes.js"></script>
         <script src="JS/inicio.js"></script>
         <script src="JS/antes-depois.js"></script>
+        <script src="JS/esconde_joj.js"></script>
     </body>
 </html>
