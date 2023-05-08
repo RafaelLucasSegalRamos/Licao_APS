@@ -199,7 +199,7 @@ body{
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
   color: #222;
 
-  background-color: #f0f0f0;
+  background: #7c94c0;
   margin: 0;
   display: flex;
   flex-direction: column;
