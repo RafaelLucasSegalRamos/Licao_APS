@@ -1168,18 +1168,18 @@ main article#e-sports .box label i{
 }
 main article#e-sports .box label:nth-child(1) i
 {
-    background-image: url(../IMGS/01.jpg);
+    background-image: url(../IMGS/img-e-sports/game/01.jpg);
     animation: animate-joj 0.5s steps(3)  infinite;
 }
 main article#e-sports .box label:nth-child(2) i
 {
-    background-image: url(../IMGS/02.jpg);
+    background-image: url(../IMGS/img-e-sports/game/02.jpg);
     animation: animate-joj 0.4s steps(3) infinite;
 
 }
 main article#e-sports .box label:nth-child(3) i
 {
-    background-image: url(../IMGS/03.jpg);
+    background-image: url(../IMGS/img-e-sports/game/03.jpg);
     animation: animate-joj 0.7s steps(3) infinite;
 
 }
