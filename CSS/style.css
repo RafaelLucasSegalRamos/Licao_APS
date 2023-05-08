@@ -1044,7 +1044,7 @@ article p.tenis{
     overflow: hidden;
    }
   div#comparison figure { 
-    background-image: url(../IMGS/img-BA/Resident_evil.jpeg); 
+    background-image: url(../IMGS/img-BA/Resident_remake.jpeg); 
     background-size: cover;
     position: relative;
     font-size: 0;
@@ -1057,7 +1057,7 @@ article p.tenis{
     width: 100%;
   }
   div#comparison figure div { 
-    background-image: url(../IMGS/img-BA/Resident_remake.jpeg);
+    background-image: url(../IMGS/img-BA/Resident_evil.jpeg);
     background-size: cover;
     position: absolute;
     width: 50%; 
