@@ -1098,7 +1098,7 @@ article p.tenis{
   input[type=range]::-webkit-slider-thumb {
       -webkit-appearance:none;
       width: 50px; height: 50px;   
-      background: url(../IMGS/img-BA/seta-s.png), rgba(255, 255, 255, 0.61);
+      background: url(../IMGS/comparador/seta-s.png), rgba(255, 255, 255, 0.61);
       border-radius: 50%;
       z-index: 10;
       background-size: cover;
