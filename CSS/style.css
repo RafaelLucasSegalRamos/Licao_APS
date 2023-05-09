@@ -426,20 +426,20 @@ main section
     min-height: 100vh;
     position: relative;
     display: block;
-    /* scroll-snap-align: start; */
-    /* background-blend-mode: multiply; */
-    /* border-top-right-radius: 10px;
-    border-top-left-radius: 10px; */
     border-radius: 10px;
     margin: 10px 0;
-    /* background: #7da3e8; */
 }
 
-main section span.space
+span.space
 {
     display: block;
-    height: 100px;
+    height: 130px;
     position: absolute;
+}
+
+footer span.space
+{
+    position: relative;
 }
 
 main #home .sect
@@ -621,13 +621,18 @@ main section article
     
 }
 
-main section article h2
+main section article h2,
+footer h2
 {
     margin: 40px;
     font-weight: 900;
     font-family: var(--silk_font);
 }
 
+footer h2
+{
+    font-weight: 400;
+}
 main section article:nth-child(1)
 {
     border-top-right-radius: 10px;
@@ -1219,26 +1224,25 @@ main article#e-sports #show-or-hide{
 /*Estilo do Footer*/
 footer
 {
-    min-height: 120vh;
+    min-height: 130vh;
     position: relative;
     color: white;
     background: #222;
     bottom: 0;
     margin-top: 200px;
-    display: grid;
-    grid-template-rows: 100px 1fr;    
-
+    display: block;
 }
 
 footer form
 {
-    min-height: 80%;
+    min-height: 80vh;
     width: 90%;
     background: rgb(22, 22, 22);
     padding: 20px;
     margin: 10px;
     border-radius: 50px;
     display: block;
+    position: relative;
 }
 
 footer form input,
@@ -1270,7 +1274,7 @@ form input[type="submit"]
 {
     border: none;
     outline: none;
-    position: relative;
+    position: absolute;
     font-family: var(--silk_font);
     text-shadow: 0 0 5px rgba(0, 255, 255, 0.493);
     font-size: 1.5em;
@@ -1281,8 +1285,10 @@ form input[type="submit"]
     z-index: 1;
     cursor: pointer;
     padding: 30px;
-    margin: 0 60px;
+    /* margin: 0 60px; */
     display: inline-block;
+    right: 100px;
+    top:100px;
     /* -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);*/
 }
 
@@ -1314,5 +1320,6 @@ footer p
     font-family: var(--poppins);
     margin: 30px;
     text-align: center;
+    position: relative;
 }
 
